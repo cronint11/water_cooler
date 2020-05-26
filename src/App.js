@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
+import Login from './components/Login';
 
 function App() {
   return (
     <div className="App">
-      <h4>Login</h4>
-      <span>handle:</span><input placeholder="username"></input>
-      <span>password:</span><input type="password" placeholder="password"></input>
+      <Login />
     </div>
   );
 }
