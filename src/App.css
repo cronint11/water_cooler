@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+ }
+
+body {
+  background-color: rgb(23, 28, 71);
+}
+
+h4, span {
+  color: black;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +54,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
