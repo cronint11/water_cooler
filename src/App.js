@@ -1,8 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Button, Card, Container, Jumbotron } from 'react-bootstrap';
+import { Button, Card, Container, Jumbotron } from 'react-bootstrap';
 import Darkmode from 'darkmode-js';
+import Navigation from './components/Navigation';
+import Header from './components/Header';
+import Login from './components/Login';
+import Logout from './components/Logout';
+import Feed from './components/Feed';
+
+export const GlobalContext=React.createContext();
+const reducer = (state, action) => {
+  switch(action.type){
+    case "authenticated":
+      //code logic to authenticate user. Payload will need to be updated from Login.js in button OnClick function.
+      return {...state, authenticated: true};
+    case "logout":
+      //code logic to logout. Payload will need to be updated from Logout.js.
+      return {...state, authenticated: false};
+    default:
+      return state;
+  }
+};
 
 const jumbotronStyle = {
   backgroundColor: 'lightblue',
@@ -11,30 +31,23 @@ const jumbotronStyle = {
 new Darkmode().showWidget();
 
 function App() {
+  const [state, dispatch]=React.useReducer(reducer,{});
+
   return (
     <div className="App">
-      <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Water Cooler</Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="#Log_In">Log In</Nav.Link>
-        <Nav.Link href="#reviews">Reviews</Nav.Link>
-        <Nav.Link href="#subscription_list">Subscriptions</Nav.Link>
-        <Nav.Link href="#friend_list">Friends</Nav.Link>
-      </Nav>      
-      </Navbar>
+      <GlobalContext.Provider value={{state, dispatch}}>
+      <Navigation />
       <Jumbotron fluid style={jumbotronStyle}>
-      <Container>
-    <h2>When you thirst for new media!</h2>
-    <p>
-      We know movies, music, tv shows, books, podcasts, video games and more!
-    </p>
-      </Container>
+      <Header />
     </Jumbotron>
-     
-      <h4>Login</h4>
-      <span>handle:</span><input placeholder="username"></input>
-      <span>password:</span><input type="password" placeholder="password"></input>
-
+     <Router>
+      <Switch>
+       <Route path='/log_in' component={Login} />
+       <Route path='/feed' component={Feed} />
+       <Route path='/log_out' component={Logout} />
+       <Route component={Login} />
+      </Switch>
+     </Router>
       <div container>      
       <Card style={{ width: '18rem' }}>
       {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
@@ -57,12 +70,10 @@ function App() {
       </Card.Body>
       </div>
       
-
+      </GlobalContext.Provider>
     </div>
   );
   
 }
-
-
 
 export default App;
