@@ -1,57 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
- }
- 
- h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
- }
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
-body {
-  background-color: rgb(23, 28, 71);
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+  h2, p {
+    color: white;    
 }
 
 h4, span {
-  color: black;
+    color: black;
+}
+
+.text-center {
+    color: #416a8b;
+}
+
+p {
+  font-style: italic;
 }
 
 .App {
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bottom-nav {
+  margin-top: 12% !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-image {
+  position: relative;
+  right: 25%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-container {
+  padding-top: 4%;
+  padding-left: 20%;
+  padding-right: 25%
 }
 
-.App-link {
-  color: #61dafb;
+.login-form {
+  border: solid lightgray;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  height: 100%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+#login-btn {
+  background-color: #3f698c;
+}
+
+.img-boxes {
+  background-color: lightblue;
+}
