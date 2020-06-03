@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, Container, Jumbotron } from 'react-bootstrap';
+import { Button, Card, Jumbotron } from 'react-bootstrap';
 import Darkmode from 'darkmode-js';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
