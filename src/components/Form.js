@@ -57,7 +57,7 @@ const styleFontGold = {
 }
 
 const styleImg = {
-  width: "auto"
+  width: "100%"
 };
 
 export { Form, Input, Button, Card, ProfileThumb, Error, styleFontBlue, styleFontRed, styleFontGold, styleImg };
