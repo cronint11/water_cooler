@@ -1,30 +1,35 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import logo from './watercooler-big.png';
-import Login from './components/Login-Jose.js';
+import Login from './components/Login.js';
+import Feed from './components/Feed';
 import Reviews from './components/Reviews-test.js';
 
-// import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
+// Font Awesome Setup
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStarReg } from '@fortawesome/free-regular-svg-icons';
 
-// import { FacebookLoginButton } from 'react-social-login-buttons';
+library.add( faStar, faStarReg, faStarHalfAlt );
 
 class App extends Component {
-  
-    render() {    
-      
-      return ( 
-       
-          <Router>
-            <div>      
-                <Route exact path="/" component={Login} />
-                <Route exact path="/reviews" component={Reviews} />
-            </div>
-          </Router>
-  
-      );
-    }
+
+  render() {
+
+    return (
+
+      <Router>
+        <Switch>
+          
+          <Route exact path="/feed" component={Feed} />
+          <Route exact path="/reviews" component={Reviews} />
+          <Route component={Login} />
+        </Switch>
+      </Router>
+
+    );
+  }
 }
 
 export default App;
