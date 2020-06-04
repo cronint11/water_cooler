@@ -27,7 +27,7 @@ function Login(props) {
             <br />
             <Input type="password" placeholder="Password" />
             <br />
-            <Button className="btn-lg btn-block" onClick={() => { return <Redirect to="/feed" />; }}>Log In</Button>
+            <Button className="btn-lg btn-block" onClick={() => { return <Redirect to="/feed" /> }}>Log In</Button>
             <div className="text-center" style={styleFontRed}>
               Or continue with your Social account
             </div>
