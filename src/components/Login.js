@@ -16,13 +16,13 @@ function Login(props) {
     <Container>
       <Row className="mt-3">
         <Col xs="12" md="6">
-          <h1 className="text-center" style={styleFontBlue}>When you thirst for new media!</h1>
+          <h2 className="text-center" style={styleFontBlue}>When you thirst for new media!</h2>
           <br />
           <img src={watercooler} alt="" style={styleImg} />
         </Col>
         <Col xs="12" md="6">
           <Form className="login-form">
-            <h1 className="text-center" style={styleFontBlue}>Water Cooler</h1><br></br>
+            <h2 className="text-center" style={styleFontBlue}>Water Cooler</h2><br></br>
             <Input type="email" placeholder="Email" />
             <br />
             <Input type="password" placeholder="Password" />
