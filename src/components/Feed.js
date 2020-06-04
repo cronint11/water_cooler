@@ -8,6 +8,7 @@ const dummyFeed = [{
   reviewTitle: "Beautiful Dystopia",
   mediaTitle: "Blade Runner 2049",
   rating: "R",
+  handle: "Jessie87",
   profileThumb: "https://randomuser.me/api/portraits/thumb/women/24.jpg",
   review: 'A visually breathtaking, long-fuse action movie whose unconventional thrills could be described as many things — from tantalizing to tedious — but never "artificially intelligent."'
 }, {
@@ -16,6 +17,7 @@ const dummyFeed = [{
   reviewTitle: "SFX, Story, and Cinematics stand the test of time!",
   mediaTitle: "The Matrix",
   rating: "R",
+  handle: "Buttered Rum Popcorn",
   profileThumb: "https://randomuser.me/api/portraits/thumb/men/42.jpg",
   review: "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
 }];
