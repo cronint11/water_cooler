@@ -9,10 +9,10 @@ import Reviews from './components/Reviews-test.js';
 
 // Font Awesome Setup
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faStar, faStarHalfAlt, faPlus, faComments, faHandHoldingWater, faCalculator } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faStarHalfAlt, faPlus, faComments, faHandHoldingWater } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarReg, faComments as faCommentsReg, faEye } from '@fortawesome/free-regular-svg-icons';
 
-library.add( faStar, faStarReg, faStarHalfAlt, faComments, faCommentsReg, faEye, faPlus, faHandHoldingWater, faCalculator );
+library.add( faStar, faStarReg, faStarHalfAlt, faComments, faCommentsReg, faEye, faPlus, faHandHoldingWater );
 
 class App extends Component {
 
