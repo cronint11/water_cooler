@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Review from './Review';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const dummyFeed = [{
   poster: "http://www.omdbapi.com/src/poster.jpg",
@@ -18,11 +18,25 @@ const dummyFeed = [{
   rating: "R",
   profileThumb: "https://randomuser.me/api/portraits/thumb/men/42.jpg",
   review: "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+},
+{
+  poster: "https://ae01.alicdn.com/kf/HTB1QszXdjfguuRjSspaq6yXVXXas/Horror-Film-The-Shining-poster-Kraft-paper-print-painting-Poster-home-Decorative-DIY-Wall-Sticker-Home.jpg_q50.jpg",
+  stars: "5",
+  reviewTitle: "A classic you won't want to miss, Jack Nicholson delivers",
+  mediaTitle: "The Shining",
+  rating: "R",
+  profileThumb: "https://randomuser.me/api/portraits/thumb/men/37.jpg",
+  review: "Heeeeere's Johnny....need we say more?"
 }];
 
 function Feed(props) {
   return (
     <div>
+      <Container fluid>
+        <Row>
+          <Col className="header-col">Movie Reviews</Col>
+        </Row>
+      </Container>
       {dummyFeed.map((item, index) => <Review review={item} key={index} />)}
     </div>
   );
