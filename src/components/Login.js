@@ -33,7 +33,7 @@ function Login(props) {
             </div>
             <FacebookLoginButton className="mt-3 mb-3" />
             <div className="text-center">
-              <Link to="/sign-up">Sign Up</Link>
+              <Link to="/signup">Sign Up</Link>
               <span className="p-2">|</span>
               <Link to="/forgot-password">Forgot Password</Link>
             </div>
