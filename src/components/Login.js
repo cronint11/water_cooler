@@ -7,7 +7,7 @@ import { FacebookLoginButton } from "react-social-login-buttons";
 
 // Our libraries
 import { Button, Form, Input, styleFontBlue, styleFontRed, styleImg } from "../components/Form";
-import watercooler from "../watercooler.png";
+import watercooler from "../water-cooler.png";
 
 function Login(props) {
   // const context=React.useContext(GlobalContext);
