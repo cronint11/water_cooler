@@ -8,6 +8,70 @@ body {
   max-width: 100%;
 }
 
+.small-img {
+  height: 50px;
+  padding-right: 20px;
+}
+
+.media-body {
+  padding-top:10px;
+  padding-left: 10px;
+}
+
+.media-img {
+  padding-left: 20px;  
+  padding-top: 15px;
+}
+
+.movies {
+  background: #ffca18;
+  color: #88001b;
+  height: 100px;
+}
+
+.movies-heading {
+  color: #88001b;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.books {
+  background: #88001b;
+  color: #ffca18;
+  height: 100px;
+}
+
+.books-heading {
+  color: #ffca18;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.podcasts {
+  background: #033d5b;
+  color: #92d7f8;  
+  height: 100px;
+}
+
+.podcasts-heading {
+  color: #92d7f8;  
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.music {
+  background: #92d7f8;
+  color: #033d5b;  
+  height: 100px;
+}
+
+.music-heading {
+  color: #033d5b;  
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+
 .header-col {
   background-color: #88001b;
   height: 100px;
