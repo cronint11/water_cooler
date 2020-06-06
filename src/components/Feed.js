@@ -1,6 +1,7 @@
 import React from 'react';
 import Review from './Review';
 import { Container, Row, Col } from 'react-bootstrap';
+import watercooler from "../gold-circle.png";
 
 const dummyFeed = [{
   poster: "http://www.omdbapi.com/src/poster.jpg",
@@ -34,7 +35,7 @@ function Feed(props) {
     <div>
       <Container fluid>
         <Row>
-          <Col className="header-col">Movie Reviews</Col>
+        <Col className="header-col"><img className="small-img" src={watercooler}></img>Movie Reviews</Col>
         </Row>
       </Container>
       {dummyFeed.map((item, index) => <Review review={item} key={index} />)}
