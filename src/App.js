@@ -7,6 +7,7 @@ import Signup from './components/Signup.js';
 import Feed from './components/Feed';
 import Reviews from './components/Reviews-test.js';
 import Mediatype from './components/Mediatype.js';
+import Watchlist from './components/Watchlist.js';
 import { Nav } from 'react-bootstrap';
 
 
@@ -29,6 +30,7 @@ class App extends Component {
           <Route exact path="/reviews" component={Reviews} />
           <Route exact path="/signup" component={Signup} />          
           <Route exact path="/media" component={Mediatype} />
+          <Route exact path="/watchlist" component={Watchlist} />
           <Route component={Login} />
         </Switch>        
       </Router> 
