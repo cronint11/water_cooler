@@ -12,7 +12,10 @@ function Review(props) {
   const toggleAdd = () => setTooltipOpenAdd(!tooltipOpenAdd);
   const [tootipOpenHandle, setToottipOpenHandle] = useState(false);
   const toggleHandle = () => setToottipOpenHandle(!tootipOpenHandle);
-  console.log(props);
+
+  // reviewClick = () => {
+    
+  // }
 
   return <Card>
     <Container className="pt-2">
@@ -40,8 +43,8 @@ function Review(props) {
               <h6 style={styleFontRed}>{props.review.mediaTitle} ({props.review.rating})</h6>
             </Col>
             <Col>
-              <ProfileThumb id={`thumb-${props.reviewID}`} src={props.review.profileThumb} alt="" />
-              <Tooltip target={`thumb-${props.reviewID}`} isOpen={tootipOpenHandle} toggle={toggleHandle}>{props.review.handle}</Tooltip>
+              <ProfileThumb id={`thumb-${props.review.reviewID}`} src={props.review.profileThumb} alt="" />
+              <Tooltip target={`thumb-${props.review.reviewID}`} isOpen={tootipOpenHandle} toggle={toggleHandle}>{props.review.handle}</Tooltip>
             </Col>
           </Row>
           <p style={styleFontBlue}>{props.review.review}</p>

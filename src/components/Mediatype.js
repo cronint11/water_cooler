@@ -13,7 +13,7 @@ const Mediatype = () => {
         <Row>
           <Col className="header-col"><img className="small-img" alt="" src={watercooler}></img>Our Media</Col>
         </Row>
-      </Container>
+    </Container>
     <Row>
     <Col>
     <Media className="movies">
@@ -63,11 +63,7 @@ const Mediatype = () => {
       </Media>
     </Media>
 
-
-    </div>
-
-
-    
+    </div>  
     
   );
 };

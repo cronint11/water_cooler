@@ -27,6 +27,7 @@ const dummyFeed = [{
 {
   poster: "https://ae01.alicdn.com/kf/HTB1QszXdjfguuRjSspaq6yXVXXas/Horror-Film-The-Shining-poster-Kraft-paper-print-painting-Poster-home-Decorative-DIY-Wall-Sticker-Home.jpg_q50.jpg",
   stars: "5",
+  handle: "dummy",
   reviewTitle: "A classic you won't want to miss, Jack Nicholson delivers",
   mediaTitle: "The Shining",
   rating: "R",
@@ -60,6 +61,7 @@ const dummyFeed = [{
   reviewTitle: "When I think of Sandra Bullock and Dennis Miller as prognosticators, but this film is very much so!",
   mediaTitle: "The Net",
   rating: "PG-13",
+  handle: "dummy",
   profileThumb: "https://randomuser.me/api/portraits/thumb/men/37.jpg",
   review: "A computer programmer stumbles upon a conspiracy, putting her life and the lives of those around her in great danger.",
   reviewID: 5

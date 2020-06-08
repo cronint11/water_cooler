@@ -51,12 +51,9 @@ class App extends Component {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="link-3">Friends</Nav.Link>
-          </Nav.Item>          
+          </Nav.Item>
       </Nav>
     </div>
-         
-          
-        
     );
   }
 }
