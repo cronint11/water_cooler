@@ -35,7 +35,7 @@ function Feed(props) {
     <div>
       <Container fluid>
         <Row>
-        <Col className="header-col"><img className="small-img" src={watercooler}></img>Movie Reviews</Col>
+        <Col className="header-col"><img className="small-img" alt="" src={watercooler}></img>Movie Reviews</Col>
         </Row>
       </Container>
       {dummyFeed.map((item, index) => <Review review={item} key={index} />)}
