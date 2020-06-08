@@ -25,8 +25,12 @@ body {
   color: #88001b;
   font-size: 13px;
   font-style: italic;  
-  text-align: center;
-  
+  text-align: center;  
+}
+
+.new-media {
+  font-size: 27px;
+
 }
 
 h2, p {

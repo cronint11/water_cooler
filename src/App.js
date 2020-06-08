@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/Login.js';
+import Signup from './components/Signup.js';
 import Feed from './components/Feed';
 import CreateReview from './components/CreateReview';
 import Reviews from './components/Reviews-test.js';
@@ -26,6 +27,7 @@ class App extends Component {
           <Route exact path="/create-review" component={CreateReview} />
           <Route exact path="/feed" component={Feed} />
           <Route exact path="/reviews" component={Reviews} />
+          <Route exact path="/signup" component={Signup} />
           <Route component={Login} />
         </Switch>        
       </Router> 
