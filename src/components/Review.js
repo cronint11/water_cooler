@@ -12,6 +12,7 @@ function Review(props) {
   const toggleAdd = () => setTooltipOpenAdd(!tooltipOpenAdd);
   const [tootipOpenHandle, setToottipOpenHandle] = useState(false);
   const toggleHandle = () => setToottipOpenHandle(!tootipOpenHandle);
+  console.log(props);
 
   return <Card>
     <Container className="pt-2">
@@ -23,12 +24,12 @@ function Review(props) {
           <br />
           <Row>
             <Col xs="auto" className="d-block mx-auto">
-              <FontAwesomeIcon  id="discussion" style={styleFontRed} icon={{ prefix: 'fas', iconName: 'comments' }} />
-              <Tooltip target="discussion" isOpen={tooltipOpenDiscussion} toggle={toggleDiscussion}>Go to discussion</Tooltip>
+              <FontAwesomeIcon  id={`discussion-${props.reviewID}`} style={styleFontRed} icon={{ prefix: 'fas', iconName: 'comments' }} />
+              <Tooltip target={`discussion-${props.reviewID}`} isOpen={tooltipOpenDiscussion} toggle={toggleDiscussion}>Go to discussion</Tooltip>
             </Col>
             <Col xs="auto" className="d-block mx-auto">
-              <FontAwesomeIcon  id="add" style={styleFontRed} icon={{ prefix: 'fas', iconName: 'hand-holding-water' }} />
-              <Tooltip target="add" isOpen={tooltipOpenAdd} toggle={toggleAdd}>Add to water cooler</Tooltip>
+              <FontAwesomeIcon  id={`add-${props.reviewID}`} style={styleFontRed} icon={{ prefix: 'fas', iconName: 'hand-holding-water' }} />
+              <Tooltip target={`add-${props.reviewID}`} isOpen={tooltipOpenAdd} toggle={toggleAdd}>Add to water cooler</Tooltip>
             </Col>
           </Row>
         </Col>
@@ -39,8 +40,8 @@ function Review(props) {
               <h6 style={styleFontRed}>{props.review.mediaTitle} ({props.review.rating})</h6>
             </Col>
             <Col>
-              <ProfileThumb id="thumb" src={props.review.profileThumb} alt="" />
-              <Tooltip target="thumb" isOpen={tootipOpenHandle} toggle={toggleHandle}>{props.review.handle}</Tooltip>
+              <ProfileThumb id={`thumb-${props.reviewID}`} src={props.review.profileThumb} alt="" />
+              <Tooltip target={`thumb-${props.reviewID}`} isOpen={tootipOpenHandle} toggle={toggleHandle}>{props.review.handle}</Tooltip>
             </Col>
           </Row>
           <p style={styleFontBlue}>{props.review.review}</p>

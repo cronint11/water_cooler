@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './components/Login.js';
-import Signup from './components/Signup.js';
+import Login from './components/Login';
+import Signup from './components/Signup';
 import Feed from './components/Feed';
+import FeedFB from './components/FeedFB';
 import CreateReview from './components/CreateReview';
-import Reviews from './components/Reviews-test.js';
-import Mediatype from './components/Mediatype.js';
+// import Reviews from './components/Reviews-test.js';
+import Mediatype from './components/Mediatype';
+import Watchlist from './components/Watchlist';
 import { Nav } from 'react-bootstrap';
 
 
@@ -26,13 +28,15 @@ class App extends Component {
     <div>
       <Router>
         <Switch>
-          <Route exact path="/create-review" component={CreateReview} />
           <Route exact path="/feed" component={Feed} />
-          <Route exact path="/reviews" component={Reviews} />
-          <Route exact path="/signup" component={Signup} />          
+          <Route exact path="/feedfb" component={FeedFB} />
+          <Route exact path="/create-review" component={CreateReview} />
           <Route exact path="/media" component={Mediatype} />
+          <Route exact path="/watchlist" component={Watchlist} />
+          {/* <Route exact path="/reviews" component={Reviews} /> */}
+          <Route exact path="/signup" component={Signup} />
           <Route component={Login} />
-        </Switch>        
+        </Switch>
       </Router> 
       <h6 className="slogan">We know movies, music, tv shows, books, podcasts, video games and more...</h6>
       <Nav className="justify-content-center" activeKey="/home">

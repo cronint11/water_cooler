@@ -1,6 +1,6 @@
 // Public libraries
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { GlobalContext } from "../App";
 import { Container, Row, Col } from "reactstrap";
 import { FacebookLoginButton } from "react-social-login-buttons";
@@ -11,8 +11,9 @@ import watercooler from "../water-cooler.png";
 
 class Login extends React.Component {
 
-  onSubmit = () => {
-    return <Redirect to="/feed" />
+  onSubmit = (msg, path) => {
+    alert(msg);
+    this.props.history.push(path);
   }
 
   // const context=React.useContext(GlobalContext);
@@ -33,13 +34,13 @@ class Login extends React.Component {
               <br />
               <Input type="password" placeholder="Password" />
               <br />
-              <Button className="btn-lg btn-block" onClick={this.onSubmit}>Log In</Button>
+              <Button className="btn-lg btn-block" onClick={()=>{this.onSubmit("signed in","/feed")}}>Login</Button>
               <div className="text-center" style={styleFontRed}>
                 Or continue with your Social account
             </div>
-              <FacebookLoginButton className="mt-3 mb-3" />
+              <FacebookLoginButton className="mt-3 mb-3" onClick={()=>{this.onSubmit("logged in with fb", "/feedfb")}}/>
               <div className="text-center">
-                <Link to="/sign-up">Sign Up</Link>
+                <Link to="/signup">Sign Up</Link>
                 <span className="p-2">|</span>
                 <Link to="/forgot-password">Forgot Password</Link>
               </div>
