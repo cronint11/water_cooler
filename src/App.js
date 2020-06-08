@@ -7,10 +7,11 @@ import Signup from './components/Signup';
 import Feed from './components/Feed';
 import FeedFB from './components/FeedFB';
 import CreateReview from './components/CreateReview';
-// import Reviews from './components/Reviews-test.js';
-import Mediatype from './components/Mediatype';
-import Watchlist from './components/Watchlist';
-import { Nav } from 'react-bootstrap';
+import Mediatype from './components/Mediatype.js';
+import Watchlist from './components/Watchlist.js';
+import SearchFriend from './components/Searchforfriend.js';
+import Footer from './components/Footer.js';
+
 
 
 // Font Awesome Setup
@@ -35,11 +36,13 @@ class App extends Component {
           <Route exact path="/watchlist" component={Watchlist} />
           {/* <Route exact path="/reviews" component={Reviews} /> */}
           <Route exact path="/signup" component={Signup} />
+          <Route exact path="/searchfriend" component={SearchFriend} />
           <Route component={Login} />
         </Switch>
       </Router> 
       <h6 className="slogan">We know movies, music, tv shows, books, podcasts, video games and more...</h6>
-      <Nav className="justify-content-center" activeKey="/home">
+      
+      {/* <Nav className="justify-content-center" activeKey="/home">
           <Nav.Item>
             <Nav.Link href="/home">Home</Nav.Link>
           </Nav.Item>
@@ -51,9 +54,12 @@ class App extends Component {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="link-3">Friends</Nav.Link>
-          </Nav.Item>
-      </Nav>
-    </div>
+          </Nav.Item>          
+      </Nav> */}
+
+      <Footer />
+    </div>   
+    
     );
   }
 }

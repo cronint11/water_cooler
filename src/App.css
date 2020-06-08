@@ -172,3 +172,13 @@ p {
   background-color: lightblue;
 }
 
+#footer {
+  font-size: 18px;
+  color: #88001b;
+  width: 100%;
+  height: 100px;
+  margin: auto;  
+  text-align:center;
+}
+
+
