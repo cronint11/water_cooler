@@ -7,7 +7,9 @@ import Signup from './components/Signup.js';
 import Feed from './components/Feed';
 import CreateReview from './components/CreateReview';
 import Reviews from './components/Reviews-test.js';
+import Mediatype from './components/Mediatype.js';
 import { Nav } from 'react-bootstrap';
+
 
 // Font Awesome Setup
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -27,7 +29,8 @@ class App extends Component {
           <Route exact path="/create-review" component={CreateReview} />
           <Route exact path="/feed" component={Feed} />
           <Route exact path="/reviews" component={Reviews} />
-          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/signup" component={Signup} />          
+          <Route exact path="/media" component={Mediatype} />
           <Route component={Login} />
         </Switch>        
       </Router> 
