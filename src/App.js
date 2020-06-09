@@ -11,7 +11,7 @@ import Mediatype from './components/Mediatype.js';
 import Watchlist from './components/Watchlist.js';
 import SearchFriend from './components/Searchforfriend.js';
 import Footer from './components/Footer.js';
-
+import Footerv2 from './components/Footer-v2.js'
 
 
 // Font Awesome Setup
@@ -39,25 +39,10 @@ class App extends Component {
           <Route exact path="/searchfriend" component={SearchFriend} />
           <Route component={Login} />
         </Switch>
+        <Footerv2 />
       </Router> 
-      <h6 className="slogan">We know movies, music, tv shows, books, podcasts, video games and more...</h6>
       
-      {/* <Nav className="justify-content-center" activeKey="/home">
-          <Nav.Item>
-            <Nav.Link href="/home">Home</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="link-1">Profile</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="link-2">Watchlist</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="link-3">Friends</Nav.Link>
-          </Nav.Item>          
-      </Nav> */}
-
-      <Footer />
+     
     </div>   
     
     );
