@@ -36,7 +36,7 @@ class App extends Component {
           <Route exact path="/watchlist" component={Watchlist} />
           {/* <Route exact path="/reviews" component={Reviews} /> */}
           <Route exact path="/signup" component={Signup} />
-          <Route exact path="/searchfriend" component={SearchFriend} />
+          <Route exact path="/friends" component={SearchFriend} />
           <Route component={Login} />
         </Switch>
       </Router> 
