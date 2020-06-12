@@ -67,7 +67,7 @@ const dummyFeed = [{
 
 function Feed(props) {
   return (
-    <div>
+    <div className='footer-padding'>
       <Container fluid>
         <Row>
         <Col className="header-col"><img className="small-img" src={watercooler} alt="water cooler logo"></img>Movie Reviews</Col>

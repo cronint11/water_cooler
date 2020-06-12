@@ -20,7 +20,7 @@ class Login extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className="login-padding">
         <Row className="mt-3">
           <Col xs="12" md="6">
             <h2 className="text-center" style={styleFontBlue}>When you thirst for new media!</h2>
