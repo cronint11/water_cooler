@@ -7,7 +7,7 @@ import { FacebookLoginButton } from "react-social-login-buttons";
 
 // Our libraries
 import { Button, Form, Input, styleFontBlue, styleFontRed, styleImg } from "../components/Form";
-import watercooler from "../water-cooler.png";
+import watercooler from "../images/water-cooler.png";
 
 class Login extends React.Component {
 
