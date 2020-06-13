@@ -1,0 +1,24 @@
+{
+  "medias": [
+    {
+      "class": "movies",
+      "img_src": "../images/movies.jpg",
+      "msg": "Talk about the latest movie, or the latest movie YOU saw!"
+    },
+    {
+      "class": "books",
+      "img_src": "../images/books.jpg",
+      "msg": "Read a book, find a discussion, enjoy the journey again!"
+    },
+    {
+      "class": "podcasts",
+      "img_src": "../images/podcasts.jpg",
+      "msg": "Find the conversations you're looking for on conversations!"
+    },
+    {
+      "class": "music",
+      "img_src": "../images/music.jpg",
+      "msg": "Drop lines about bars, or discover new beats!"
+    }
+  ]
+}
