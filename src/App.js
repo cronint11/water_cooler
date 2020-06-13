@@ -5,13 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Feed from './components/Feed';
-import FeedFB from './components/FeedFB';
 import CreateReview from './components/CreateReview';
-import Mediatype from './components/Mediatype.js';
-import Watchlist from './components/Watchlist.js';
-import SearchFriend from './components/Searchforfriend.js';
-import Footer from './components/Footer.js';
-import Footerv2 from './components/Footer-v2.js'
+import Mediatype from './components/Mediatype';
+import Watchlist from './components/Watchlist';
+import SearchFriend from './components/Searchforfriend';
+import Subscriptions from './components/Subscriptions';
+import Footerv2 from './components/Footer-v2';
 
 
 // Font Awesome Setup
@@ -30,11 +29,10 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/feed" component={Feed} />
-          <Route exact path="/feedfb" component={FeedFB} />
           <Route exact path="/create-review" component={CreateReview} />
           <Route exact path="/media" component={Mediatype} />
           <Route exact path="/watchlist" component={Watchlist} />
-          {/* <Route exact path="/reviews" component={Reviews} /> */}
+          <Route exact path="/subscriptions" component={Subscriptions} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/friends" component={SearchFriend} />
           <Route component={Login} />

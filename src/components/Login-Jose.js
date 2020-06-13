@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import '../App.css';
-import watercooler from '../watercooler.png';
+import watercooler from '../images/watercooler.png';
 import { Link } from "react-router-dom";
 
 import { Row, Col } from 'reactstrap';

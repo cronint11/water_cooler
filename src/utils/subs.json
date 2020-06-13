@@ -1,0 +1,90 @@
+{
+  "movie": [
+    {
+      "service": "Netflix",
+      "website": "netflix.com",
+      "logo": "../images/Netflix.png",
+      "logotype": "file"
+    },
+    {
+      "service": "Disney+",
+      "website": "disneyplus.com",
+      "logo": "../images/Disney.png",
+      "logotype": "file"
+    },
+    {
+      "service": "hulu",
+      "website": "hulu.com",
+      "logo": "../images/hulu.png",
+      "logotype": "file"
+    },
+    {
+      "service": "AmazonPrime",
+      "website": "amazon.com/amazonprime",
+      "logo": "amazon",
+      "logotype": "file"
+    },
+    {
+      "service": "YouTube",
+      "website": "youtube.com",
+      "logo": "youtube",
+      "logotype": "FontAwesome"
+    }
+  ],
+  "books": [
+    {
+      "service": "audible",
+      "website": "audible.com",
+      "logo": "../images/audible.png",
+      "logotype": "file"
+    },
+    {
+      "service": "Libro.fm",
+      "website": "libro.fm",
+      "logo": "../images/libro.png",
+      "logotype": "file"
+    },
+    {
+      "service": "audiobooks",
+      "website": "audiobooks.com",
+      "logo": "../images/audiobooks.png",
+      "logotype": "file"
+    },
+    {
+      "service": "Epic! Books",
+      "website": "getepic.com",
+      "logo": "../images/epic.com",
+      "logotype": "file"
+    },
+    {
+      "service": "downpour",
+      "website": "downpour.com",
+      "logo": "../images/downpour.png",
+      "logotype": "file"
+    },
+    {
+      "service": "instaread",
+      "website": "instaread.co",
+      "logo": "../images/instaread.png",
+      "logotype": "file"
+    },
+    {
+      "service": "Prime Reading",
+      "website": "amazon.com/amazonprime",
+      "logo": "amazon",
+      "logotype": "FontAwesome"
+    },
+    {
+      "service": "Kindle Unlimited",
+      "website": "amazon.com/kindle-dbz",
+      "logo": "../images/kindle.png",
+      "logotype": "file"
+    },
+    {
+      "service": "bookmate",
+      "website": "bookmate.com",
+      "logo": "../images/bookmate.png",
+      "logotype": "file"
+    }
+  ]
+}

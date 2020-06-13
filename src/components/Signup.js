@@ -6,7 +6,7 @@ import { Container, Row, Col } from "reactstrap";
 
 // Our libraries
 import { Button, Form, Input, styleFontBlue, styleImg } from "../components/Form";
-import watercooler from "../gold-circle.png";
+import watercooler from "../images/gold-circle.png";
 // import watercooler from "../water-cooler.png";
 
 function Signup(props) {
