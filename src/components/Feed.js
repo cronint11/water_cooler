@@ -1,7 +1,32 @@
 import React from 'react';
-import Review from './Review';
+
 import { Container, Row, Col } from 'react-bootstrap';
 import watercooler from "../images/gold-circle.png";
+
+
+import Review from './Review';
+
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'root',
+  database: 'quasi'
+});
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Connected!');
+});
+
+con.query('SELECT * FROM friends', (err,rows) => {
+  if(err) throw err;
+
+  console.log('Data received from Db:');
+  console.log(rows);
+  let userFeed = rows
+  return userFeed
+});
 
 const dummyFeed = [{
   poster: "http://www.omdbapi.com/src/poster.jpg",
@@ -67,15 +92,29 @@ const dummyFeed = [{
   reviewID: 5
 }];
 
+let trueFeed = class {
+  constructor(poster, stars, reviewTitle, mediaTitle, rating, profileThumb, review) {
+    this.poster = poster;
+    this.starts = stars;
+    this.reviewTitle = reviewTitle;
+    this.mediaTitle = mediaTitle;
+    this.rating = rating;
+    this.profileThumb = profileThumb;
+    this.review = review;
+  }
+};
+
+
 function Feed(props) {
   return (
     <div>
-      <Container fluid>
+    <Container fluid>
         <Row>
         <Col className="header-col"><img className="small-img" src={watercooler} alt="water cooler logo"></img>Movie Reviews</Col>
         </Row>
       </Container>
-      {dummyFeed.map((item, index) => <Review review={{...item, index}} key={index} />)}
+    {/* {dummyFeed.map((item, index) => <Review review={{...item, index}} key={index} />)} */}
+      {trueFeed.map((item, index) => <Review review={item} key={index} />)}
     </div>
   );
 };

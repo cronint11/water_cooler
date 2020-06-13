@@ -1,6 +1,6 @@
 // Public libraries
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 // import { GlobalContext } from "../App";
 import { Container, Row, Col } from "reactstrap";
 import { FacebookLoginButton } from "react-social-login-buttons";
