@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Container, Form } from 'reactstrap';
 import { FormControl, Button, InputGroup } from 'react-bootstrap';
-import watercooler from "../gold-circle.png";
-import poster from "../watercooler-poster.jpg";
+import watercooler from "../images/gold-circle.png";
+import poster from "../images/watercooler-poster.jpg";
 
 const Watchlist = () => {
   return (   

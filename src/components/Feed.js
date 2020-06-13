@@ -1,7 +1,7 @@
 import React from 'react';
 import Review from './Review';
 import { Container, Row, Col } from 'react-bootstrap';
-import watercooler from "../gold-circle.png";
+import watercooler from "../images/gold-circle.png";
 
 const dummyFeed = [{
   poster: "http://www.omdbapi.com/src/poster.jpg",

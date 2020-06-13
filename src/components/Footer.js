@@ -11,7 +11,7 @@ function Footer() {
     <Navbar.Brand id="footer" href="/feed">Home</Navbar.Brand>
     <Navbar.Brand id="footer" href="/media">Profile</Navbar.Brand>
     <Navbar.Brand id="footer" href="/watchlist">Watchlist</Navbar.Brand>
-    <Navbar.Brand id="footer" href="#">Friends</Navbar.Brand>
+    <Navbar.Brand id="footer" href="/friends">Friends</Navbar.Brand>
     </Navbar>
     
     </Container>
