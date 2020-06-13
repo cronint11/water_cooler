@@ -69,6 +69,7 @@
 
 .header-col {
   background-color: #88001b;
+  position: fixed;
   height: 100px;
   font-size: 30px;
   font-weight: 500;
@@ -204,5 +205,3 @@ p {
     padding-bottom: 20px;
     border-top: 1px solid;
 }
-
-

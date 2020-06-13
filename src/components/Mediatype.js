@@ -12,7 +12,7 @@ const Mediatype = () => {
     <Container fluid>
         <Row>
           <Col className="header-col"><img className="small-img" alt="" src={watercooler}></img>Our Media</Col>
-        </Row>
+        </Row>        
     </Container>
     <Row>
     <Col>
