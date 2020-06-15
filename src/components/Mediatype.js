@@ -1,11 +1,11 @@
 import React from 'react';
-import { Media, Row, Col, Container } from 'reactstrap';
+import { Media, Row, Col } from 'reactstrap';
 // import movies from "../movies.jpg";
 // import books from "../books.jpg";
 // import podcasts from "../podcasts.jpg";
 // import music from "../music.jpg";
-import watercooler from "../images/gold-circle.png";
 import mediatype from "../utils/mediatype.json";
+import DynamicHeader from "./DynamicHeader";
 
 const Mediatype = (props) => {
   // { props.history.push()}
@@ -19,11 +19,7 @@ const Mediatype = (props) => {
 
   return (
     <div>
-      <Container fluid>
-        <Row>
-          <Col className="header-col"><img className="small-img" alt="" src={watercooler}></img>Our Media</Col>
-        </Row>
-      </Container>
+      <DynamicHeader headerTitle="My Media" />
       {mediatype.medias.map((media, index) =>
         <Row onClick={rowClicked.bind(this, media.class)}>
           <Col>
