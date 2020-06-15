@@ -38,6 +38,8 @@ const Button = styled.button`
 
 const ProfileThumb = styled.img`
   border-radius: 50%;
+  height: 68.5px;
+  width: 68.5px;
 `;
 
 const Error = styled.div`

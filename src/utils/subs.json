@@ -1,5 +1,5 @@
 {
-  "movie": [
+  "movies": [
     {
       "service": "Netflix",
       "website": "netflix.com",
@@ -29,6 +29,12 @@
       "website": "youtube.com",
       "logo": "youtube",
       "logotype": "FontAwesome"
+    },
+    {
+      "service": "vudu",
+      "website": "vudu.com",
+      "logo": "../images/vudu.png",
+      "logotype": "file"
     }
   ],
   "books": [
