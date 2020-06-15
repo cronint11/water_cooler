@@ -3,7 +3,6 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import watercooler from "../images/gold-circle.png";
 
-
 import Review from './Review';
 
 const mysql = require('mysql');
@@ -19,7 +18,7 @@ connection.connect((err) => {
   console.log('Connected!');
 });
 
-con.query('SELECT * FROM friends', (err,rows) => {
+connection.query('SELECT * FROM users', (err,rows) => {
   if(err) throw err;
 
   console.log('Data received from Db:');
