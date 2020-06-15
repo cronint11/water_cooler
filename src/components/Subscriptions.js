@@ -18,8 +18,9 @@ class Subscriptions extends React.Component {
     return (
       <span>
         possible subscriptions for {this.state.mediaType}
-        <ul>
-        {this.state.subscriptions.map((item, index) => <li>{item.service}</li>)}
+        <ul style={{"list-style-type": "none"}}>
+          {this.state.subscriptions.map((item, index) =>
+            <li><input type="checkbox" /> {item.service}</li>)}
         </ul>
       </span>
     );
