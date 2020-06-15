@@ -36,13 +36,13 @@ function Review(props) {
             </Col>
           </Row>
         </Col>
-        <Col xs="10">
+        <Col>
           <Row>
-            <Col>
+            <Col xs="10">
               <h3 style={styleFontBlue}>{props.review.reviewTitle}</h3>
               <h6 style={styleFontRed}>{props.review.mediaTitle} ({props.review.rating})</h6>
             </Col>
-            <Col>
+            <Col xs="2">
               <ProfileThumb id={`thumb-${props.review.reviewID}`} src={props.review.profileThumb} alt="" />
               <Tooltip target={`thumb-${props.review.reviewID}`} isOpen={tootipOpenHandle} toggle={toggleHandle}>{props.review.handle}</Tooltip>
             </Col>
