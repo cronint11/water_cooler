@@ -10,7 +10,7 @@ import Mediatype from './components/Mediatype';
 import Watchlist from './components/Watchlist';
 import SearchFriend from './components/Searchforfriend';
 import Subscriptions from './components/Subscriptions';
-import Footerv2 from './components/Footer-v2';
+import Footer from './components/Footer';
 
 
 // Font Awesome Setup
@@ -36,8 +36,8 @@ class App extends Component {
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/friends" component={SearchFriend} />
           <Route component={Login} />
-        </Switch>
-        <Footerv2 />
+        </Switch>        
+        <Footer />
       </Router> 
       
      
