@@ -1,7 +1,8 @@
 import React from 'react';
-
 import DynamicHeader from './DynamicHeader';
+import { Row, Col } from 'react-bootstrap';
 import subs from '../utils/subs.json';
+
 
 class Subscriptions extends React.Component {
   constructor(props) {
@@ -14,18 +15,28 @@ class Subscriptions extends React.Component {
   }
 
   renderColor(index) {
-    let styleObj = { height: "60px" };
+    let styleObj = { 
+      height: "80px", 
+      paddingTop: "30px",
+      paddingLeft: "20px"    
+    };
+
     switch (index % 4) {
       case 0:
-        styleObj.background = "red";
-        styleObj.color = "gold";
+        styleObj.background = "#ffca18";
+        styleObj.color = "#88001b";
         break;
       case 1:
-        styleObj.background = "blue";
+        styleObj.background = "#88001b";
+        styleObj.color = "#ffca18";
         break;
       case 2:
+        styleObj.background = "#033d5b";
+        styleObj.color = "white";
         break;
       case 3:
+        styleObj.background = "#92d7f8";
+        styleObj.color = "#033d5b";
         break;
       default:
         break;
@@ -39,11 +50,13 @@ class Subscriptions extends React.Component {
     return (
       <span>
         <DynamicHeader headerTitle="My Subscriptions" />
-        possible subscriptions for {this.state.mediaType}
-        <ul style={{ "list-style-type": "none" }}>
+        {/* <div className="subscriptions">Possible subscriptions for {this.state.mediaType}</div> */}
+        <Row>
+        <Col style={{ "list-style-type": "none" }}>
           {this.state.subscriptions.map((item, index) =>
             <li style={this.renderColor(index)} ><input type="checkbox" /> {item.service}</li>)}
-        </ul>
+        </Col>
+        </Row>
       </span>
     );
   }

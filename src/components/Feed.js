@@ -3,7 +3,6 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import watercooler from "../images/gold-circle.png";
 
-
 import Review from './Review';
 import dummyFeed from '../dummy_data/feed.json';
 
