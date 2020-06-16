@@ -1,0 +1,24 @@
+{
+  "movies": [
+    {
+      "mediaID": "tt0133093",
+      "consumed": true,
+      "title": "The Matrix",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "rated": "R",
+      "stars": null,
+      "genre": [],
+      "plot": null
+    },
+    {
+      "mediaID": "tt0327137",
+      "consumed": false,
+      "title": "Secondhand Lions",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDExNDM3OGQtYjI3ZC00MmE0LWE0OGEtMzgxZDY2MDE1MDFjXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+      "rated": "PG",
+      "stars": null,
+      "genre": ["Comedy", "Drama", "Family"],
+      "plot": "A coming-of-age story about a shy, young boy sent by his irresponsible mother to spend the summer with his wealthy, eccentric uncles in Texas."
+    }
+  ]
+}

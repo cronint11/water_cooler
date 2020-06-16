@@ -21,6 +21,7 @@ class Subscriptions extends React.Component {
         styleObj.color = "gold";
         break;
       case 1:
+        styleObj.background = "blue";
         break;
       case 2:
         break;
