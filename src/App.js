@@ -17,8 +17,9 @@ import Footer from './components/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar, faStarHalfAlt, faPlus, faComments, faHandHoldingWater } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarReg, faComments as faCommentsReg, faEye } from '@fortawesome/free-regular-svg-icons';
+import { faYoutube, faAmazon } from '@fortawesome/free-brands-svg-icons';
 
-library.add( faStar, faStarReg, faStarHalfAlt, faComments, faCommentsReg, faEye, faPlus, faHandHoldingWater );
+library.add( faStar, faStarReg, faStarHalfAlt, faComments, faCommentsReg, faEye, faPlus, faHandHoldingWater, faYoutube, faAmazon );
 
 class App extends Component {
 
