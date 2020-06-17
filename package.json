@@ -13,7 +13,10 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "ckeditor4-react": "^1.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
@@ -24,6 +27,7 @@
     "react-social-login-buttons": "^3.1.0",
     "react-sticky-footer": "0.1.0-rc3",
     "reactstrap": "^8.4.1",
+    "sequelize": "^5.21.13",
     "styled-components": "^5.1.1"
   },
   "scripts": {
