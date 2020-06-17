@@ -9,8 +9,14 @@ class DynamicHeader extends React.Component {
   };
 
   render() {
+    const style ={
+      header: {
+        position: "fixed",
+        zIndex: 100
+      }
+    }
     return (
-      <Container fluid>
+      <Container style={style.header} fluid>
         <Row>
           <Col className="header-col"><img className="small-img" alt="" src={watercooler}></img>{this.state.headerTitle}</Col>
         </Row>

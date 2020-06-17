@@ -3,6 +3,11 @@ import DynamicHeader from './DynamicHeader';
 import { Row, Col } from 'react-bootstrap';
 import subs from '../utils/subs.json';
 
+const style= {
+  headerBuffer: {
+    paddingTop: '100px'
+  }
+};
 
 class Subscriptions extends React.Component {
   constructor(props) {
@@ -48,8 +53,10 @@ class Subscriptions extends React.Component {
 
   render() {
     return (
+      
       <span>
         <DynamicHeader headerTitle="My Subscriptions" />
+        <div style={style.headerBuffer}></div>
         {/* <div className="subscriptions">Possible subscriptions for {this.state.mediaType}</div> */}
         <Row>
         <Col style={{ "list-style-type": "none" }}>
@@ -58,6 +65,7 @@ class Subscriptions extends React.Component {
         </Col>
         </Row>
       </span>
+      
     );
   }
 };

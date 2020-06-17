@@ -5,6 +5,7 @@ import watercooler from "../images/gold-circle.png";
 
 import Review from './Review';
 import dummyFeed from '../dummy_data/feed.json';
+import DynamicHeader from './DynamicHeader';
 
 // const mysql = require('mysql');
 
@@ -42,14 +43,22 @@ import dummyFeed from '../dummy_data/feed.json';
 
 
 function Feed(props) {
+  const style= {
+    headerBuffer: {
+      paddingTop: '100px'
+    }
+  }
   return (
     <div>
-      <Container fluid>
+      {/* <Container fluid>
         <Row>
           <Col className="header-col"><img className="small-img" src={watercooler} alt="water cooler logo"></img>Movie Reviews</Col>
         </Row>
-      </Container>
-      {dummyFeed.map((item, index) => <Review review={{ ...item, index }} key={index} />)}
+      </Container> */}
+      <DynamicHeader headerTitle={'Movie Reviews'} />
+      <div style={style.headerBuffer}>
+        {dummyFeed.map((item, index) => <Review review={{ ...item, index }} key={index} />)}
+      </div>
       {/* {trueFeed.map((item, index) => <Review review={item} key={index} />)} */}
     </div>
   );
