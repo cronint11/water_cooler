@@ -17,9 +17,16 @@ const Mediatype = (props) => {
     });
   };
 
+  const style= {
+    headerBuffer: {
+      paddingTop: '100px'
+    }
+  }
+  
   return (
     <div>
       <DynamicHeader headerTitle="My Media" />
+      <div style={style.headerBuffer}>
       {mediatype.medias.map((media, index) =>
         <Row onClick={rowClicked.bind(this, media.class)}>
           <Col>
@@ -34,6 +41,8 @@ const Mediatype = (props) => {
             </Media>
           </Col>
         </Row>)}
+        </div>
+
     </div>
 
   );

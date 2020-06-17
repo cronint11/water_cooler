@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Container, Form } from 'reactstrap';
 import { FormControl, Button, InputGroup } from 'react-bootstrap';
 import watercooler from "../images/gold-circle.png";
+import DynamicHeader from './DynamicHeader';
 
 import watchlist from "../dummy_data/watchlist.json";
 
@@ -15,12 +16,22 @@ class Watchlist extends React.Component {
   };
 
   render() {
+
+    var style= {
+      headerBuffer: {
+        paddingTop: '100px'
+      }
+    }
     return (
       <div>
+        <DynamicHeader headerTitle={'Watchlist'}/>
+
+        
+        <div style={style.headerBuffer}>
         <Container fluid>
-          <Row>
+          {/* <Row>
             <Col className="header-col"><img className="small-img" alt="" src={watercooler}></img>Watchlist</Col>
-          </Row>
+          </Row> */}
 
           <Row>
             <Form inline className="search-form">
@@ -67,6 +78,7 @@ class Watchlist extends React.Component {
           </Row> */}
 
         </Container>
+        </div>
       </div>
 
     )
