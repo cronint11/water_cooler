@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/water_cooler/static/css/main.fb04f272.chunk.css",
+    "main.js": "/water_cooler/static/js/main.2e61a6b1.chunk.js",
+    "main.js.map": "/water_cooler/static/js/main.2e61a6b1.chunk.js.map",
+    "runtime-main.js": "/water_cooler/static/js/runtime-main.bcb95b6a.js",
+    "runtime-main.js.map": "/water_cooler/static/js/runtime-main.bcb95b6a.js.map",
+    "static/css/2.09d1976d.chunk.css": "/water_cooler/static/css/2.09d1976d.chunk.css",
+    "static/js/2.231ad48a.chunk.js": "/water_cooler/static/js/2.231ad48a.chunk.js",
+    "static/js/2.231ad48a.chunk.js.map": "/water_cooler/static/js/2.231ad48a.chunk.js.map",
+    "index.html": "/water_cooler/index.html",
+    "precache-manifest.1a06e1ebabbac2b4b94975861c06115f.js": "/water_cooler/precache-manifest.1a06e1ebabbac2b4b94975861c06115f.js",
+    "service-worker.js": "/water_cooler/service-worker.js",
+    "static/css/2.09d1976d.chunk.css.map": "/water_cooler/static/css/2.09d1976d.chunk.css.map",
+    "static/css/main.fb04f272.chunk.css.map": "/water_cooler/static/css/main.fb04f272.chunk.css.map",
+    "static/js/2.231ad48a.chunk.js.LICENSE.txt": "/water_cooler/static/js/2.231ad48a.chunk.js.LICENSE.txt",
+    "static/media/gold-circle.png": "/water_cooler/static/media/gold-circle.67a56fc5.png",
+    "static/media/water-cooler.png": "/water_cooler/static/media/water-cooler.2e5dc181.png",
+    "static/media/watercooler-friend.jpg": "/water_cooler/static/media/watercooler-friend.95e5324c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcb95b6a.js",
+    "static/css/2.09d1976d.chunk.css",
+    "static/js/2.231ad48a.chunk.js",
+    "static/css/main.fb04f272.chunk.css",
+    "static/js/main.2e61a6b1.chunk.js"
+  ]
+}
