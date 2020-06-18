@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.DOUBLE
       },
       spoiler: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.TINYINT(1)
       },
       createdAt: {
         allowNull: false,

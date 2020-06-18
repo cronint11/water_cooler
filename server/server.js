@@ -1,29 +1,28 @@
 const express = require('express');
 const logger = require('morgan');
 const cors = require('cors');
-const mysql = require('mysql2');
 const authenticatedRoutes = require('./authenticatedRoutes');
+const db = require('./models');
+const md5 = require('md5');
+const jwt = require('jsonwebtoken');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const passportJWT = require('passport-jwt');
 
 const PORT = process.env.PORT || 3306;
 const app = express();
 app.use(logger('dev'));
 app.use(cors());
 
-const conn = mysql.createConnection({
-  host: process.env.PUBLIC_URL || 'localhost',
-  port: PORT,
-  user: process.env.PUBLIC_URL ? 'jawsDB' : 'root',
-  password: process.env.PUBLIC_URL ? 'jawsDB' : 'root'
-});
+// const conn = mysql.createConnection({
+//   host: 'localhost',
+//   port: 3306,
+//   user: 'root',
+//   password: 'root'
+// });
 
 const JWT_SECRET = 'h@(|<3r5!';
 
-const db = require('.models');
-const md5 = require('md5');
-const jwt = require('jsonwebtoken');
-const passport = require('passport');
-const LocalStrategy = require('passport-local').Strategy;
-const passportJWT = require('passport-jwt');
 const JWTStrategy = passportJWT.Strategy;
 const ExtractJWT = passportJWT.ExtractJwt;
 
@@ -34,13 +33,13 @@ passport.use(new LocalStrategy({
   function (username, password, cb) {
     // returning DB Mongo code...
     db.User.findOne({
-        username: username
+        handle: username
       })
       .then( user => {
         if (!user) {
           return cb(null, false, { message: 'Incorrect credentials' });
         }
-        if (user.password===md5(password)) {
+        if (user.pwd===md5(password)) {
           return cb(null, user, { message: 'Credentials confirmed' });
         } else {
           return cb(null, false, { message: 'Incorrect credentials' });
@@ -67,14 +66,21 @@ passport.use(new JWTStrategy({
   }
 ));
 
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.post('/register', (req, res) => {
+// models.sequelize.sync().then(function() {
+//     console.log('Connected with SQLize!!');
+//   }).catch(function(err) {
+//     console.log(err, 'Error connecting with SQLize :(');
+// });
+
+app.post('/api/register', (req, res) => {
   // returning DB Mongo code...
   db.User.create({
-      username: req.body.username,
-      password: md5(req.body.password)
+      handle: req.body.username,
+      email: req.body.email,
+      pwd: md5(req.body.password)
   }).then( user => res.json(user), error => res.sendStatus(500))
     .catch( error => res.sendStatus(500));
 });
@@ -95,8 +101,9 @@ app.post('/login', (req, res) => {
 
 app.use('/authenticated', passport.authenticate('jwt', { session: false }), authenticatedRoutes);
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(PORT, () => console.log(`🌎 ==> API server now on port ${PORT}!`));
+// 🌎 
+app.listen(PORT, () => console.log(`==> API server now on port ${PORT}!`));

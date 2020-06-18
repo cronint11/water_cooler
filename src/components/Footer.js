@@ -12,7 +12,7 @@ function Footer() {
                 <Link className="footer" to="/feed">Home</Link>
                 <Link className="footer" to="/media">Profile</Link>
                 <Link className="footer" to="/watchlist">Watchlist</Link>
-                <Link className="footer" to="#">Friends</Link>
+                <Link className="footer" to="/friends">Friends</Link>
             </div>
         </div>
     )

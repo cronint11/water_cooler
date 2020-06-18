@@ -22,7 +22,7 @@ const SearchForFriend = () => {
     <Row>
       <img className="poster" alt="" src={friend}></img>
       <Col className="watchlist-text">
-        <Row>Friend Name</Row>
+        <Row>Tim Cronin</Row>
         <Row>Reviews</Row>        
         <Row>
         <InputGroup>
@@ -36,9 +36,9 @@ const SearchForFriend = () => {
     </Row><br></br>
 
     <Row>
-      <img className="poster" alt="" src={friend}></img>
+      <img className="poster" alt="" src={friend} style={{ transform: "rotate(180deg)" }}></img>
       <Col className="watchlist-text">
-      <Row>Friend Name</Row>
+      <Row>Mit Ninorc</Row>
         <Row>Reviews</Row> 
         <Row>
         <InputGroup>

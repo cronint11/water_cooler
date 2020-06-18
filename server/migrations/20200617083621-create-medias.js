@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       consumed: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.TINYINT(1)
       },
       createdAt: {
         allowNull: false,

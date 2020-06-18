@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Reaction = sequelize.define('Reaction', {
-    reactionID: DataTypes.BIGINT,
+    reactionID: DataTypes.INTEGER,
     reaction: DataTypes.STRING
   }, {});
   Reaction.associate = function(models) {

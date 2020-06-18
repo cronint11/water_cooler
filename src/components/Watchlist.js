@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col, Container, Form } from 'reactstrap';
 import { FormControl, Button, InputGroup } from 'react-bootstrap';
-import watercooler from "../images/gold-circle.png";
 import DynamicHeader from './DynamicHeader';
 
 import watchlist from "../dummy_data/watchlist.json";
@@ -29,9 +28,6 @@ class Watchlist extends React.Component {
         
         <div style={style.headerBuffer}>
         <Container fluid>
-          {/* <Row>
-            <Col className="header-col"><img className="small-img" alt="" src={watercooler}></img>Watchlist</Col>
-          </Row> */}
 
           <Row>
             <Form inline className="search-form">
@@ -51,6 +47,7 @@ class Watchlist extends React.Component {
                 {media.consumed?<Row>
                   <InputGroup>
                     <InputGroup.Prepend>
+                    {/* onClick={this.props.history.push({  pathname:"create-review"})}*/}
                       <InputGroup.Text id="review">Review</InputGroup.Text>
                     </InputGroup.Prepend>
                     <FormControl as="textarea" aria-label="With textarea" />
@@ -59,24 +56,6 @@ class Watchlist extends React.Component {
               </Col>
             </Row>
           )}
-          {/* <br></br>
-          <Row>
-            <img className="poster" alt="" src={poster}></img>
-            <Col className="watchlist-text">
-              <Row >Title</Row>
-              <Row>Genre</Row>
-              <Row>Description</Row>
-              <Row>
-                <InputGroup>
-                  <InputGroup.Prepend>
-                    <InputGroup.Text id="review">Review</InputGroup.Text>
-                  </InputGroup.Prepend>
-                  <FormControl as="textarea" aria-label="With textarea" className="review-form" />
-                </InputGroup>
-              </Row>
-            </Col>
-          </Row> */}
-
         </Container>
         </div>
       </div>
