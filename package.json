@@ -34,7 +34,7 @@
     "react-social-login-buttons": "^3.1.0",
     "react-sticky-footer": "0.1.0-rc3",
     "reactstrap": "^8.4.1",
-    "sequelize": "^5.21.13",
+    "sequelize": "^6.29.0",
     "styled-components": "^5.1.1"
   },
   "scripts": {
